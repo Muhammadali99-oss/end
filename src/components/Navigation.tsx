@@ -31,7 +31,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-                  src="/YPC-/lovable-uploads/34063bc5-78ea-48ac-b6a7-c910f4061ee7.png"
+                  src="/YPCf/lovable-uploads/34063bc5-78ea-48ac-b6a7-c910f4061ee7.png"
               alt="YPC Logo" 
               className="h-12 sm:h-16 md:h-20 w-auto object-contain"
             />
