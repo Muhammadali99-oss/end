@@ -1,11 +1,11 @@
 import { Button } from '@/components/ui/button';
-import { Mail, MessageCircle, Users, MapPin, Heart } from 'lucide-react';
+import { Mail, MessageCircle, Instagram, Linkedin, MapPin, Heart } from 'lucide-react';
 
 const Footer = () => {
   const quickLinks = [
     { name: 'About Us', href: '#about' },
     { name: 'Programs', href: '#programs' },
-    { name: 'Impact', href: '#impact' },
+    { name: 'Testimonials', href: '#impact' },
     { name: 'Partners', href: '#partners' },
     { name: 'Team', href: '#team' },
     { name: 'Resources', href: '#resources' },
@@ -38,35 +38,35 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center mb-6">
               <img 
-                src="/lovable-uploads/ypc-logo.png" 
+                src="/Youth/lovable-uploads/ypc-logo.png" 
                 alt="Youth Perspective Speaking Club Logo" 
-                className="h-20 w-auto object-contain"
+                className="h-32 w-auto object-contain"
                 style={{ background: 'transparent' }}
               />
             </div>
             <p className="text-primary-foreground/80 leading-relaxed mb-6">
-              Empowering the next generation of leaders through debate, communication, and critical thinking skills across Uzbekistan.
+              Empowering the next generation of leaders through debate, research, communication, and critical thinking skills across Uzbekistan.
             </p>
             
             {/* Social Links */}
             <div className="flex space-x-4">
               <button 
                 className="w-10 h-10 border border-white/50 text-white hover:bg-white/20 rounded-md flex items-center justify-center transition-colors"
-                onClick={() => window.open('mailto:hello@ypc.uz', '_blank')}
-              >
-                <Mail className="h-4 w-4" />
-              </button>
-              <button 
-                className="w-10 h-10 border border-white/50 text-white hover:bg-white/20 rounded-md flex items-center justify-center transition-colors"
-                onClick={() => window.open('https://t.me/YouthPerspectiveClub', '_blank')}
+                onClick={() => window.open('https://t.me/youthperspective', '_blank')}
               >
                 <MessageCircle className="h-4 w-4" />
               </button>
               <button 
                 className="w-10 h-10 border border-white/50 text-white hover:bg-white/20 rounded-md flex items-center justify-center transition-colors"
-                onClick={() => window.open('https://instagram.com/ypc_uzbekistan', '_blank')}
+                onClick={() => window.open('https://www.instagram.com/youthperspective24/', '_blank')}
               >
-                <Users className="h-4 w-4" />
+                <Instagram className="h-4 w-4" />
+              </button>
+              <button 
+                className="w-10 h-10 border border-white/50 text-white hover:bg-white/20 rounded-md flex items-center justify-center transition-colors"
+                onClick={() => window.open('https://www.linkedin.com/in/youth-perspective-club-project-062761373/?original_referer=https%3A%2F%2Fuz%2Elinkedin%2Ecom%2F&originalSubdomain=uz', '_blank')}
+              >
+                <Linkedin className="h-4 w-4" />
               </button>
             </div>
           </div>
@@ -107,7 +107,7 @@ const Footer = () => {
             <div className="mt-8">
               <button 
                 className="px-6 py-3 rounded-lg border-2 border-white text-white font-semibold hover:bg-white hover:text-blue-900 transition-all duration-300"
-                onClick={() => window.open('https://forms.google.com', '_blank')}
+                onClick={() => window.open('https://t.me/youthperspective', '_blank')}
               >
                 🚀 Join Our Programs
               </button>
@@ -136,13 +136,13 @@ const Footer = () => {
             
             <div className="space-y-2 text-sm">
               <div className="font-inter text-primary-foreground/80">
-                <strong>Email:</strong> hello@ypc.uz
+                <strong>Telegram:</strong> <a href="https://t.me/youthperspective" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent/80 underline">@youthperspective</a>
               </div>
               <div className="font-inter text-primary-foreground/80">
-                <strong>Telegram:</strong> @YouthPerspectiveClub
+                <strong>Instagram:</strong> <a href="https://www.instagram.com/youthperspective24/" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent/80 underline">@youthperspective24</a>
               </div>
               <div className="font-inter text-primary-foreground/80">
-                <strong>Instagram:</strong> @ypc_uzbekistan
+                <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/youth-perspective-club-project-062761373/?original_referer=https%3A%2F%2Fuz%2Elinkedin%2Ecom%2F&originalSubdomain=uz" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent/80 underline">Youth Perspective Club</a>
               </div>
             </div>
           </div>

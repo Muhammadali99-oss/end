@@ -9,11 +9,11 @@ const Navigation = () => {
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Programs', href: '#programs' },
-    { name: 'Impact', href: '#impact' },
-    { name: 'Partners', href: '#partners' },
+    { name: 'Testimonials', href: '#impact' },
     { name: 'Team', href: '#team' },
     { name: 'Resources', href: '#resources' },
     { name: 'Contact', href: '#contact' },
+    { name: 'Partners', href: '#partners' },
   ];
 
   const scrollToSection = (href: string) => {
@@ -31,7 +31,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/34063bc5-78ea-48ac-b6a7-c910f4061ee7.png" 
+              src="/Youth/lovable-uploads/34063bc5-78ea-48ac-b6a7-c910f4061ee7.png" 
               alt="YPC Logo" 
               className="h-20 w-auto object-contain"
             />

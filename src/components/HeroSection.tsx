@@ -28,7 +28,7 @@ const HeroSection = () => {
         </h1>
         
         <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-        Youth Perspective Club empowers students across Uzbekistan to combine debate with deep research, analysis, and evidence-based thinking, helping them become changemakers who don’t just speak — they prove, analyze, and innovate.
+        Youth Perspective Club empowers students across Uzbekistan to combine debate with research, analysis, and evidence-based thinking, because it helps them become changemakers who prove, analyze, and innovate instead of just speak.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -56,22 +56,22 @@ const HeroSection = () => {
             }}
             onClick={scrollToImpact}
           >
-            See Our Impact
+            See Testimonials
           </button>
         </div>
 
         {/* Stats Preview */}
         <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-            <div className="font-black text-2xl text-accent">1000+</div>
-            <div className="text-sm text-white/80">Students</div>
+            <div className="font-black text-2xl text-accent">1200+</div>
+            <div className="text-sm text-white/80">Participants</div>
           </div>
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-            <div className="font-black text-2xl text-accent">10+</div>
-            <div className="text-sm text-white/80">Tournaments</div>
+            <div className="font-black text-2xl text-accent">40+</div>
+            <div className="text-sm text-white/80">Events</div>
           </div>
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-            <div className="font-black text-2xl text-accent">6+</div>
+            <div className="font-black text-2xl text-accent">12</div>
             <div className="text-sm text-white/80">Regions</div>
           </div>
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
@@ -81,12 +81,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
-        </div>
-      </div>
     </section>
   );
 };

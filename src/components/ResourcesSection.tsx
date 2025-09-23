@@ -168,8 +168,8 @@ const ResourcesSection = () => {
             </p>
           </div>
           
-          <div className="grid sm:grid-cols-2 gap-6">
-            <div className="text-center">
+          <div className="flex justify-center">
+            <div className="text-center max-w-md">
               <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <BookOpen className="h-6 w-6 text-primary-foreground" />
               </div>
@@ -182,42 +182,14 @@ const ResourcesSection = () => {
               <Button 
                 variant="outline"
                 className="font-inter font-semibold"
-                onClick={() => window.open('https://forms.google.com', '_blank')}
+                onClick={() => window.open('https://t.me/ypc_admin', '_blank')}
               >
                 Submit Request
-              </Button>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="h-6 w-6 text-accent-foreground" />
-              </div>
-              <h4 className="font-inter font-bold text-lg text-primary mb-2">
-                Contribute Resources
-              </h4>
-              <p className="font-inter text-sm text-muted-foreground mb-4">
-                Share your expertise and help the community grow
-              </p>
-              <Button 
-                variant="outline"
-                className="font-inter font-semibold"
-                onClick={() => window.open('mailto:resources@ypc.uz', '_blank')}
-              >
-                Contribute
               </Button>
             </div>
           </div>
         </div>
 
-        <div className="text-center mt-12">
-          <Button 
-            size="lg"
-            className="bg-accent text-accent-foreground hover:bg-accent/90 font-inter font-bold text-lg px-8 py-4"
-            onClick={() => window.open('https://forms.google.com', '_blank')}
-          >
-            Access All Resources
-          </Button>
-        </div>
       </div>
     </section>
   );

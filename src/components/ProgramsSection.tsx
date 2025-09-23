@@ -1,9 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Trophy, Zap, GraduationCap, Mic } from 'lucide-react';
-import workshopImage from '@/assets/workshop-training.jpg';
-import debateImage from '@/assets/hero-debate.jpg';
-import stageImage from '@/assets/stage-confidence.jpg';
 
 const ProgramsSection = () => {
   const programs = [
@@ -11,28 +8,28 @@ const ProgramsSection = () => {
       title: 'Research Debate Tournaments',
       description: 'Competitive tournaments where students showcase their argumentative skills, backed by solid research, case studies, and data analysis, to build stronger, evidence-based arguments.',
       icon: Trophy,
-      image: debateImage,
+      image: '/Youth/Debate.JPG',
       features: ['Structured debate formats', 'Expert judging', 'Awards and recognition', 'Regional championships']
     },
     {
       title: 'Research Debate-a-thons',
       description: 'Marathon-style debate sessions designed to sharpen skills through continuous research, analysis, and real-time feedback, helping participants learn to think fast and argue with proof.',
       icon: Zap,
-      image: workshopImage,
+      image: '/Youth/Debathons.JPG',
       features: ['Rapid research & fact-checking challenges', 'Evidence-based debating practice', 'Peer collaboration & feedback', 'Mentorship from experienced researchers']
     },
     {
       title: 'Training Sessions & Workshops',
       description: 'Interactive sessions that combine debate techniques with research methods, teaching students how to collect data, evaluate sources, and integrate findings into compelling arguments.',
       icon: GraduationCap,
-      image: workshopImage,
+      image: '/Youth/Trainings.JPG',
       features: ['Expert-led sessions', 'Interactive workshops', 'Skill-building exercises', 'Practical training']
     },
     {
       title: 'Stage Confidence Building',
       description: 'Specialized programs focused on developing public speaking confidence, stage presence, and effective communication techniques.',
       icon: Mic,
-      image: stageImage,
+      image: '/Youth/Confidenceonstage.JPG',
       features: ['Public speaking practice', 'Confidence building', 'Stage presence training', 'Communication skills']
     }
   ];
@@ -45,7 +42,7 @@ const ProgramsSection = () => {
             Our Programs
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Comprehensive programs designed to develop debate skills, leadership qualities, and confident communication abilities.
+            Programs designed to develop debate skills, research skills, leadership qualities, and communication abilities.
           </p>
         </div>
 

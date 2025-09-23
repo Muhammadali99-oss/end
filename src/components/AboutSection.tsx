@@ -10,7 +10,7 @@ const AboutSection = () => {
             About Youth Perspective Club
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Empowering the next generation of leaders through debate, communication, and critical thinking skills.
+            Empowering the next generation of leaders through debate, research, communication, and critical thinking skills.
           </p>
         </div>
 
@@ -18,14 +18,14 @@ const AboutSection = () => {
           <div>
             <h3 className="font-bold text-3xl text-primary mb-6">Our Mission</h3>
             <p className="text-lg text-foreground leading-relaxed mb-6">
-            We empower students to master research-driven debating, leadership, and communication skills. By integrating critical analysis, data, and structured argumentation, we prepare the next generation of changemakers who build their impact on knowledge, not just words.
+            We aim to help students to master research-driven debating, leadership, and communication skills. By implementing critical analysis, data, and structured argumentation, we help prepare the next generation of changemakers who build their impact on knowledge as opposed to simply words.
             </p>
             <p className="text-lg text-foreground leading-relaxed">
               We believe that every young person has the potential to become a leader, and through structured debate, public speaking, and critical thinking exercises, we help unlock that potential.
             </p>
           </div>
           
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-3 gap-6">
             <Card className="bg-gradient-to-br from-white to-gray-50 shadow-lg">
               <CardContent className="p-6 text-center">
                 <Target className="h-12 w-12 text-primary mx-auto mb-4" />
@@ -45,6 +45,16 @@ const AboutSection = () => {
                 </p>
               </CardContent>
             </Card>
+
+            <Card className="bg-gradient-to-br from-white to-gray-50 shadow-lg">
+              <CardContent className="p-6 text-center">
+                <Target className="h-12 w-12 text-primary mx-auto mb-4" />
+                <h4 className="font-bold text-lg text-primary mb-2">Research and Critical Thinking</h4>
+                <p className="text-sm text-muted-foreground">
+                  Helping develop research skills, argumentation skills, and critical thinking
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
 
@@ -59,7 +69,7 @@ const AboutSection = () => {
               <div>
                 <h4 className="font-bold text-xl text-primary mb-2">November 2024 - The Beginning</h4>
                 <p className="text-lg text-foreground leading-relaxed">
-                Started as an initiative to bring research-based debate and leadership training to young people across Uzbekistan.
+                We started as an initiative to bring debate and leadership training to young people across Uzbekistan through online sessions and webinars.
                 </p>
               </div>
             </div>
@@ -71,7 +81,7 @@ const AboutSection = () => {
               <div>
                 <h4 className="font-bold text-xl text-primary mb-2">Expanding Across Uzbekistan</h4>
                 <p className="text-lg text-foreground leading-relaxed">
-                We quickly grew into offline programs where students not only debate, but also conduct surveys, case studies, and analytical projects to strengthen their arguments.
+                In March, We quickly grew into offline programs with the help of our partners. In offline events, students not only debate, but also conduct research, case studies and analytical projects to strengthen their arguments.
                 </p>
               </div>
             </div>
@@ -83,7 +93,8 @@ const AboutSection = () => {
               <div>
                 <h4 className="font-bold text-xl text-primary mb-2">Today - Growing Impact</h4>
                 <p className="text-lg text-foreground leading-relaxed">
-                With 1000+ students, 10+ research-debate tournaments, and presence in 6+ regions, we continue to expand our mission of developing leaders who combine logic, evidence, and communication.                </p>
+                With 1200+ students, 40+ offline events, and presence in 12 regions, we continue to expand our mission of developing leaders who combine argumentation, evidence, and communication.
+                </p>
               </div>
             </div>
           </div>
