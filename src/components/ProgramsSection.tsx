@@ -51,7 +51,7 @@ const ProgramsSection = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {programs.map((program, index) => (
-            <Card key={index} className="group bg-card shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 overflow-hidden">
+            <Card key={index} className="group bg-card shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img 
                   src={program.image} 
