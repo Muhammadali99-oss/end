@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* YPC Design System - Navy Blue Theme */
+
+@layer base {
+  :root {
+    /* YPC Brand Colors - Navy Blue Palette */
+    --background: 0 0% 100%;
+    --foreground: 215 25% 8%;
+    
+    /* Navy Blue Primary from Logo */
+    --primary: 215 84% 15%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 215 60% 25%;
+    --primary-dark: 215 90% 10%;
+    
+    /* Secondary - Light Navy */
+    --secondary: 215 25% 92%;
+    --secondary-foreground: 215 84% 15%;
+    
+    /* Muted Gray Tones */
+    --muted: 215 15% 95%;
+    --muted-foreground: 215 10% 55%;
+    
+    /* Accent - Warm Gold */
+    --accent: 43 96% 70%;
+    --accent-foreground: 215 84% 15%;
+    
+    /* Card & UI Elements */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 8%;
+    
+    /* Borders & Inputs */
+    --border: 215 20% 88%;
+    --input: 215 20% 90%;
+    --ring: 215 84% 15%;
+    
+    /* Status Colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(215 84% 15%), hsl(215 90% 10%));
+    --gradient-hero: linear-gradient(135deg, hsl(215 84% 15%) 0%, hsl(215 70% 20%) 50%, hsl(215 60% 25%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(215 25% 98%));
+    --gradient-primary-dark: linear-gradient(135deg, hsl(215 90% 10%), hsl(215 95% 5%));
+    
+    /* Shadows */
+    --shadow-navy: 0 10px 25px -5px hsl(215 84% 15% / 0.1), 0 8px 10px -6px hsl(215 84% 15% / 0.1);
+    --shadow-glow: 0 0 30px hsl(215 84% 15% / 0.15);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    --radius: 0.5rem;
+    
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 8%;
+  }
+  
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+}
