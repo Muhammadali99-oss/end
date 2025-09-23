@@ -114,7 +114,7 @@ const ResourcesSection = () => {
         {/* Resources Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {resources.map((resource, index) => (
-            <Card key={index} className="bg-card shadow-navy group hover:shadow-glow transition-all duration-300 hover:scale-105">
+            <Card key={index} className="bg-card shadow-navy group hover:shadow-glow transition-all duration-300 hover:scale-110">
               <CardHeader className="pb-4">
                 <div className="flex items-start justify-between">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
