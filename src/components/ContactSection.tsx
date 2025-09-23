@@ -46,7 +46,7 @@ const ContactSection = () => {
           <div className="space-y-6">
             <div>
               <h3 className="font-bold text-xl sm:text-2xl text-primary mb-4 sm:mb-6">
-                Other Ways to Connect
+                Ways to Connect Us
               </h3>
               <div className="grid gap-3 sm:gap-4">
                 {contactMethods.map((method, index) => (
