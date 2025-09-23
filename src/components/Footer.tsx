@@ -32,19 +32,19 @@ const Footer = () => {
 
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid lg:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
           {/* Brand Section */}
-          <div className="lg:col-span-1">
-            <div className="flex items-center mb-6">
+          <div className="sm:col-span-2 lg:col-span-1">
+            <div className="flex items-center mb-4 sm:mb-6">
               <img 
                 src="/Youth/lovable-uploads/ypc-logo.png" 
                 alt="Youth Perspective Speaking Club Logo" 
-                className="h-32 w-auto object-contain"
+                className="h-20 sm:h-24 md:h-32 w-auto object-contain"
                 style={{ background: 'transparent' }}
               />
             </div>
-            <p className="text-primary-foreground/80 leading-relaxed mb-6">
+            <p className="text-primary-foreground/80 leading-relaxed mb-4 sm:mb-6 text-sm sm:text-base">
               Empowering the next generation of leaders through debate, research, communication, and critical thinking skills across Uzbekistan.
             </p>
             

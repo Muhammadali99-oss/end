@@ -28,14 +28,14 @@ const PartnersSection = () => {
   ];
 
   return (
-    <section id="partners" className="py-20 bg-gray-100 text-center">
-      <h2 className="font-black text-4xl sm:text-5xl text-primary mb-12 invisible-until-scroll">Our Partners</h2>
+    <section id="partners" className="py-12 sm:py-16 md:py-20 bg-gray-100 text-center">
+      <h2 className="font-black text-3xl sm:text-4xl md:text-5xl text-primary mb-8 sm:mb-12 invisible-until-scroll px-4">Our Partners</h2>
 
       <div className="overflow-hidden">
         <div className="flex animate-scroll">
           {/* First set of partners */}
           {partners.map((partner, index) => (
-            <div key={`first-${index}`} className="flex-shrink-0 mx-8">
+            <div key={`first-${index}`} className="flex-shrink-0 mx-4 sm:mx-6 md:mx-8">
               <a 
                 href={partner.url} 
                 target="_blank" 
@@ -45,7 +45,7 @@ const PartnersSection = () => {
                 <img 
                   src={partner.logo} 
                   alt={partner.name} 
-                  className="w-48 h-32 object-contain" 
+                  className="w-32 h-20 sm:w-40 sm:h-24 md:w-48 md:h-32 object-contain" 
                 />
               </a>
             </div>
@@ -53,7 +53,7 @@ const PartnersSection = () => {
           
           {/* Duplicate set for seamless loop */}
           {partners.map((partner, index) => (
-            <div key={`second-${index}`} className="flex-shrink-0 mx-8">
+            <div key={`second-${index}`} className="flex-shrink-0 mx-4 sm:mx-6 md:mx-8">
               <a 
                 href={partner.url} 
                 target="_blank" 
@@ -63,7 +63,7 @@ const PartnersSection = () => {
                 <img 
                   src={partner.logo} 
                   alt={partner.name} 
-                  className="w-48 h-32 object-contain" 
+                  className="w-32 h-20 sm:w-40 sm:h-24 md:w-48 md:h-32 object-contain" 
                 />
               </a>
             </div>

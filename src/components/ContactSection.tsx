@@ -31,13 +31,13 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-background">
+    <section id="contact" className="py-12 sm:py-16 md:py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="font-black text-4xl sm:text-5xl text-primary mb-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="font-black text-3xl sm:text-4xl md:text-5xl text-primary mb-4 sm:mb-6">
             Get In Touch
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-2">
             Ready to join our community or have questions about our programs? We'd love to hear from you.
           </p>
         </div>
@@ -45,24 +45,24 @@ const ContactSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="space-y-6">
             <div>
-              <h3 className="font-bold text-2xl text-primary mb-6">
+              <h3 className="font-bold text-xl sm:text-2xl text-primary mb-4 sm:mb-6">
                 Other Ways to Connect
               </h3>
-              <div className="grid gap-4">
+              <div className="grid gap-3 sm:gap-4">
                 {contactMethods.map((method, index) => (
                   <Card key={index} className="bg-card shadow-lg group hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer" onClick={() => window.open(method.action, '_blank')}>
-                    <CardContent className="p-4 flex items-center space-x-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                        <method.icon className={`h-6 w-6 ${method.color}`} />
+                    <CardContent className="p-3 sm:p-4 flex items-center space-x-3 sm:space-x-4">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors flex-shrink-0">
+                        <method.icon className={`h-5 w-5 sm:h-6 sm:w-6 ${method.color}`} />
                       </div>
-                      <div className="flex-1">
-                        <h4 className="font-bold text-foreground">
+                      <div className="flex-1 min-w-0">
+                        <h4 className="font-bold text-foreground text-sm sm:text-base">
                           {method.title}
                         </h4>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-xs sm:text-sm text-muted-foreground">
                           {method.description}
                         </p>
-                        <p className="font-inter text-sm text-accent font-semibold">
+                        <p className="font-inter text-xs sm:text-sm text-accent font-semibold truncate">
                           {method.value}
                         </p>
                       </div>
