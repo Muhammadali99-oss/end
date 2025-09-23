@@ -38,7 +38,7 @@ const Footer = () => {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center mb-4 sm:mb-6">
               <img 
-                    src="/YPCf/lovable-uploads/ypc-logo.png"
+                    src="/lovable-uploads/ypc-logo.png"
                 alt="Youth Perspective Speaking Club Logo" 
                 className="h-20 sm:h-24 md:h-32 w-auto object-contain"
                 style={{ background: 'transparent' }}

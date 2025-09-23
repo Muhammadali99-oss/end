@@ -8,28 +8,28 @@ const ProgramsSection = () => {
       title: 'Research Debate Tournaments',
       description: 'Competitive tournaments where students showcase their argumentative skills, backed by solid research, case studies, and data analysis, to build stronger, evidence-based arguments.',
       icon: Trophy,
-        image: '/YPCf/Debate.JPG',
+        image: '/Debate.JPG',
       features: ['Structured debate formats', 'Expert judging', 'Awards and recognition', 'Regional championships']
     },
     {
       title: 'Research Debate-a-thons',
       description: 'Marathon-style debate sessions designed to sharpen skills through continuous research, analysis, and real-time feedback, helping participants learn to think fast and argue with proof.',
       icon: Zap,
-        image: '/YPCf/Debathons.JPG',
+        image: '/Debathons.JPG',
       features: ['Rapid research & fact-checking challenges', 'Evidence-based debating practice', 'Peer collaboration & feedback', 'Mentorship from experienced researchers']
     },
     {
       title: 'Training Sessions & Workshops',
       description: 'Interactive sessions that combine debate techniques with research methods, teaching students how to collect data, evaluate sources, and integrate findings into compelling arguments.',
       icon: GraduationCap,
-        image: '/YPCf/Trainings.JPG',
+        image: '/Trainings.JPG',
       features: ['Expert-led sessions', 'Interactive workshops', 'Skill-building exercises', 'Practical training']
     },
     {
       title: 'Stage Confidence Building',
       description: 'Specialized programs focused on developing public speaking confidence, stage presence, and effective communication techniques.',
       icon: Mic,
-        image: '/YPCf/Confidenceonstage.JPG',
+        image: '/Confidenceonstage.JPG',
       features: ['Public speaking practice', 'Confidence building', 'Stage presence training', 'Communication skills']
     }
   ];
