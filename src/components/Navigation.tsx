@@ -38,12 +38,12 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-3 xl:space-x-6">
+          <div className="flex items-center space-x-1 sm:space-x-2 md:space-x-3 xl:space-x-6">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-black hover:text-blue-600 transition-colors font-medium text-sm xl:text-base whitespace-nowrap px-2 py-1"
+                className="text-black hover:text-blue-600 transition-colors font-medium text-xs sm:text-sm xl:text-base whitespace-nowrap px-1 py-1"
               >
                 {item.name}
               </button>
@@ -51,7 +51,7 @@ const Navigation = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="lg:hidden">
+          <div className="hidden">
             <Button
               variant="ghost"
               size="sm"
@@ -65,13 +65,13 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden border-t bg-white shadow-lg">
-            <div className="px-4 pt-4 pb-6 space-y-1">
+          <div className="hidden border-t bg-white shadow-lg">
+            <div className="px-3 pt-3 pb-4 space-y-1">
               {navItems.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-medium text-base transition-colors active:bg-blue-100"
+                  className="block w-full text-left px-3 py-2.5 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md font-medium text-sm transition-colors active:bg-blue-100"
                 >
                   {item.name}
                 </button>
