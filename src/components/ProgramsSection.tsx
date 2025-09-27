@@ -5,14 +5,14 @@ import { Trophy, Zap, GraduationCap, Mic } from 'lucide-react';
 const ProgramsSection = () => {
   const programs = [
     {
-      title: 'Research Debate Tournaments',
+      title: 'Debate Tournaments',
       description: 'Competitive tournaments where students showcase their argumentative skills, backed by solid research, case studies, and data analysis, to build stronger, evidence-based arguments.',
       icon: Trophy,
         image: '/end/Debate.JPG',
       features: ['Structured debate formats', 'Expert judging', 'Awards and recognition', 'Regional championships']
     },
     {
-      title: 'Research Debate-a-thons',
+      title: 'Debate-a-thons',
       description: 'Marathon-style debate sessions designed to sharpen skills through continuous research, analysis, and real-time feedback, helping participants learn to think fast and argue with proof.',
       icon: Zap,
         image: '/end/Debathons.JPG',
