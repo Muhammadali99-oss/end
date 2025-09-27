@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import heroCollage from '@/assets/hero-collage.jpg';
 
 const HeroSection = () => {
   const scrollToImpact = () => {
@@ -15,7 +14,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroCollage})` }}
+        style={{ backgroundImage: `url('/end/Debate.JPG')` }}
       >
         <div className="absolute inset-0 bg-gradient-hero opacity-80"></div>
       </div>
