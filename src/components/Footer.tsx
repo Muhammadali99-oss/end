@@ -20,7 +20,8 @@ const Footer = () => {
   ];
 
   const locations = [
-    'Tashkent', 'Samarkand', 'Bukhara', 'Navoi', 'Jizzakh', 'Kashkadarya', 'Fergana'
+    'Tashkent', 'Samarkand', 'Bukhara', 'Navoi', 'Jizzakh', 'Kashkadarya', 'Fergana',
+    'Andijan', 'Khorezm', 'Namangan', 'Surkhandarya', 'Syrdarya'
   ];
 
   const scrollToSection = (href: string) => {
