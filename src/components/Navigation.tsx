@@ -43,7 +43,7 @@ const Navigation = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-black hover:text-blue-600 transition-colors font-medium text-xs lg:text-sm xl:text-base whitespace-nowrap px-1 lg:px-2 py-1"
+                className="text-black hover:text-blue-600 transition-colors font-medium text-sm lg:text-base xl:text-lg whitespace-nowrap px-2 lg:px-3 py-1"
               >
                 {item.name}
               </button>
