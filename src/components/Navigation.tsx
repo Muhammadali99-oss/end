@@ -37,8 +37,8 @@ const Navigation = () => {
             />
           </div>
 
-          {/* Desktop Navigation - visible on small screens and up */}
-          <div className="hidden sm:flex items-center space-x-1 md:space-x-2 lg:space-x-3 xl:space-x-4">
+          {/* Desktop Navigation - always visible on screens 480px and up */}
+          <div className="hidden min-[480px]:flex items-center space-x-1 sm:space-x-2 md:space-x-3 lg:space-x-4">
             {navItems.map((item) => (
               <button
                 key={item.name}
@@ -50,8 +50,8 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* Mobile menu button - visible only on extra small screens */}
-          <div className="sm:hidden">
+          {/* Mobile menu button - visible only on very small screens below 480px */}
+          <div className="min-[480px]:hidden">
             <Button
               variant="ghost"
               size="sm"
@@ -63,9 +63,9 @@ const Navigation = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation - visible only on extra small screens when menu is open */}
+        {/* Mobile Navigation - visible only on very small screens when menu is open */}
         {isMenuOpen && (
-          <div className="sm:hidden border-t bg-white shadow-lg">
+          <div className="min-[480px]:hidden border-t bg-white shadow-lg">
             <div className="px-4 pt-3 pb-4 space-y-1">
               {navItems.map((item) => (
                 <button
