@@ -27,31 +27,31 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 w-full bg-white border-b-2 border-blue-600 shadow-lg z-[9999]">
       <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 sm:h-18 lg:h-20">
+        <div className="flex justify-between items-center h-14 sm:h-16 md:h-18 lg:h-20">
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <img 
               src="/end/lovable-uploads/34063bc5-78ea-48ac-b6a7-c910f4061ee7.png"
               alt="YPC Logo" 
-              className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain"
+              className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain"
             />
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="flex items-center space-x-2 md:space-x-3 lg:space-x-4 xl:space-x-6">
+          {/* Desktop Navigation - visible on medium screens and up */}
+          <div className="hidden md:flex items-center space-x-2 lg:space-x-3 xl:space-x-4">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-black hover:text-blue-600 transition-colors font-medium text-sm md:text-base lg:text-lg whitespace-nowrap px-2 md:px-3 py-1"
+                className="text-black hover:text-blue-600 transition-colors font-medium text-sm lg:text-base whitespace-nowrap px-2 lg:px-3 py-1"
               >
                 {item.name}
               </button>
             ))}
           </div>
 
-          {/* Mobile menu button - hidden on all screens */}
-          <div className="hidden">
+          {/* Mobile menu button - visible on small screens */}
+          <div className="md:hidden">
             <Button
               variant="ghost"
               size="sm"
@@ -63,9 +63,9 @@ const Navigation = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation - visible on small screens when menu is open */}
         {isMenuOpen && (
-          <div className="sm:hidden border-t bg-white shadow-lg">
+          <div className="md:hidden border-t bg-white shadow-lg">
             <div className="px-4 pt-3 pb-4 space-y-1">
               {navItems.map((item) => (
                 <button
