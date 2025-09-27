@@ -4,27 +4,27 @@ const PartnersSection = () => {
   const partners = [
     {
       name: "Youth Affairs Agency",
-      logo: "/partners/youthaffairs.png",
+      logo: "/end/partners/youthaffairs.png",
       url: "https://gov.uz/yoshlar"
     },
     {
       name: "Presidential Schools",
-      logo: "/partners/Presidentialschools.png",
+      logo: "/end/partners/Presidentialschools.png",
       url: "https://presidentialschools.uz/"
     },
     {
       name: "Garnet Hotel",
-      logo: "/partners/Garnet.png",
+      logo: "/end/partners/Garnet.png",
       url: "https://garnethotel.uz/"
     },
     {
       name: "Asaxiy Books",
-      logo: "/partners/Asaxiy.png",
+      logo: "/end/partners/Asaxiy.png",
       url: "https://asaxiy.uz/"
     },
     {
       name: "Domino's Pizza",
-      logo: "/partners/Domino's.png",
+      logo: "/end/partners/Domino's.png",
       url: "https://www.dominos.com/"
     }
   ];
