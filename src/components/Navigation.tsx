@@ -38,12 +38,12 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden sm:flex items-center space-x-1 md:space-x-2 lg:space-x-3 xl:space-x-6">
+          <div className="hidden sm:flex items-center space-x-2 md:space-x-3 lg:space-x-4 xl:space-x-6">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-black hover:text-blue-600 transition-colors font-medium text-xs sm:text-sm md:text-base lg:text-lg whitespace-nowrap px-1 sm:px-2 md:px-3 py-1"
+                className="text-black hover:text-blue-600 transition-colors font-medium text-sm md:text-base lg:text-lg whitespace-nowrap px-2 md:px-3 py-1"
               >
                 {item.name}
               </button>
