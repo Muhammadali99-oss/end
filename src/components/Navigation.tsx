@@ -38,12 +38,12 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-3 xl:space-x-6">
+          <div className="hidden md:flex items-center space-x-2 lg:space-x-3 xl:space-x-6">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-black hover:text-blue-600 transition-colors font-medium text-sm xl:text-base whitespace-nowrap px-2 py-1"
+                className="text-black hover:text-blue-600 transition-colors font-medium text-xs lg:text-sm xl:text-base whitespace-nowrap px-1 lg:px-2 py-1"
               >
                 {item.name}
               </button>
@@ -51,7 +51,7 @@ const Navigation = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="lg:hidden">
+          <div className="md:hidden">
             <Button
               variant="ghost"
               size="sm"
@@ -65,7 +65,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden border-t bg-white shadow-lg">
+          <div className="md:hidden border-t bg-white shadow-lg">
             <div className="px-4 pt-3 pb-4 space-y-1">
               {navItems.map((item) => (
                 <button
