@@ -37,21 +37,21 @@ const Navigation = () => {
             />
           </div>
 
-          {/* Desktop Navigation - visible on medium screens and up */}
-          <div className="hidden md:flex items-center space-x-2 lg:space-x-3 xl:space-x-4">
+          {/* Desktop Navigation - visible on small screens and up */}
+          <div className="hidden sm:flex items-center space-x-1 md:space-x-2 lg:space-x-3 xl:space-x-4">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-black hover:text-blue-600 transition-colors font-medium text-sm lg:text-base whitespace-nowrap px-2 lg:px-3 py-1"
+                className="text-black hover:text-blue-600 transition-colors font-medium text-xs sm:text-sm md:text-base whitespace-nowrap px-1 sm:px-2 md:px-3 py-1"
               >
                 {item.name}
               </button>
             ))}
           </div>
 
-          {/* Mobile menu button - visible on small screens */}
-          <div className="md:hidden">
+          {/* Mobile menu button - visible only on extra small screens */}
+          <div className="sm:hidden">
             <Button
               variant="ghost"
               size="sm"
@@ -63,9 +63,9 @@ const Navigation = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation - visible on small screens when menu is open */}
+        {/* Mobile Navigation - visible only on extra small screens when menu is open */}
         {isMenuOpen && (
-          <div className="md:hidden border-t bg-white shadow-lg">
+          <div className="sm:hidden border-t bg-white shadow-lg">
             <div className="px-4 pt-3 pb-4 space-y-1">
               {navItems.map((item) => (
                 <button
