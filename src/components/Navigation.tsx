@@ -37,8 +37,8 @@ const Navigation = () => {
             />
           </div>
 
-          {/* Navigation - always visible */}
-          <div className="flex items-center space-x-4">
+          {/* Desktop Navigation - visible on larger screens */}
+          <div className="hidden md:flex items-center space-x-4">
             {navItems.map((item) => (
               <button
                 key={item.name}
@@ -49,7 +49,36 @@ const Navigation = () => {
               </button>
             ))}
           </div>
+
+          {/* Mobile menu button - visible on smaller screens */}
+          <div className="md:hidden">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="p-2 hover:bg-blue-50"
+            >
+              {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            </Button>
+          </div>
         </div>
+
+        {/* Mobile Navigation - visible on smaller screens when menu is open */}
+        {isMenuOpen && (
+          <div className="md:hidden border-t bg-white shadow-lg">
+            <div className="px-4 pt-3 pb-4 space-y-1">
+              {navItems.map((item) => (
+                <button
+                  key={item.name}
+                  onClick={() => scrollToSection(item.href)}
+                  className="block w-full text-left px-3 py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md font-medium text-base transition-colors active:bg-blue-100"
+                >
+                  {item.name}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );
