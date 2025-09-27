@@ -97,16 +97,6 @@ const ProgramsSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-8 sm:mt-10 md:mt-12">
-          <Button 
-            size="lg"
-            variant="outline"
-            className="border-white/30 text-white hover:bg-white/10 font-inter font-bold text-sm sm:text-base md:text-lg px-6 sm:px-8 py-3 sm:py-4"
-            onClick={() => window.open('https://forms.google.com', '_blank')}
-          >
-            Join Our Programs
-          </Button>
-        </div>
       </div>
     </section>
   );
