@@ -38,7 +38,7 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden sm:flex items-center space-x-2 md:space-x-3 lg:space-x-4 xl:space-x-6">
+          <div className="flex items-center space-x-2 md:space-x-3 lg:space-x-4 xl:space-x-6">
             {navItems.map((item) => (
               <button
                 key={item.name}
@@ -50,8 +50,8 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* Mobile menu button */}
-          <div className="sm:hidden">
+          {/* Mobile menu button - hidden on all screens */}
+          <div className="hidden">
             <Button
               variant="ghost"
               size="sm"
