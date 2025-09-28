@@ -5,14 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/',
-  build: {
-    rollupOptions: {
-      input: {
-        main: path.resolve(__dirname, 'index.html')
-      }
-    }
-  },
+  base: process.env.NODE_ENV === 'production' && process.env.VITE_DEPLOY_TARGET === 'github' ? '/end/' : '/',
   server: {
     host: "::",
     port: 8080,
