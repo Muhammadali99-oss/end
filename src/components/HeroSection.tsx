@@ -14,7 +14,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('/end/Debate.JPG')` }}
+        style={{ backgroundImage: `url('/Debate.JPG')` }}
       >
         <div className="absolute inset-0 bg-gradient-hero opacity-80"></div>
       </div>
